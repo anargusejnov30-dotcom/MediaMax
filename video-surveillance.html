@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Установка и настройка видеонаблюдения для дома и бизнеса. ООО Медиа Макс.">
+  <meta name="theme-color" content="#080A10">
+  
+  <!-- ИКОНКА САЙТА -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Видеонаблюдение — ООО «Медиа Макс»</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem("mediaMax_theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+  <script src="script.js" defer></script>
+</head>
+<body id="home">
+
+<header class="header">
+  <a class="brand" href="index.html" aria-label="Медиа Макс — главная">
+    <img src="./image/logo.jpg" alt="Медиа Макс" class="brand-logo">
+    <div class="brand-text">
+      <span class="brand-name">Медиа <span>Макс</span></span>
+      <span class="brand-tagline">IT и технические решения</span>
+    </div>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="navigation" aria-label="Основная навигация">
+    <a href="index.html">Главная</a>
+    <a href="computer-repair.html">Ремонт компьютеров</a>
+    <a href="it-services.html">Сети и IT</a>
+    <a href="appliance-repair.html">Бытовая техника</a>
+    <a href="#services">Услуги</a>
+    <a href="#request" class="nav-contact">Контакты <span>↗</span></a>
+  </nav>
+
+  <div class="header-right"></div>
+</header>
+
+<main>
+  <section class="repair-hero video-hero">
+    <div class="container repair-hero-grid">
+      <div class="repair-hero-content">
+        <div class="repair-eyebrow"><span class="video-dot"></span> БЕЗОПАСНОСТЬ И КОНТРОЛЬ</div>
+
+        <h1>Видеонаблюдение <span>для дома и бизнеса</span></h1>
+
+        <p class="repair-hero-text">
+          Подберём оборудование, установим камеры и настроим
+          удалённый просмотр. Вы сможете контролировать важные
+          объекты с компьютера или смартфона.
+        </p>
+
+        <div class="repair-hero-actions">
+          <a href="#request" class="btn btn-primary">Обсудить проект <span>↗</span></a>
+          <a href="#services" class="btn btn-secondary">Наши услуги</a>
+        </div>
+
+        <div class="repair-trust">
+          <span>✓ Подбор оборудования</span>
+          <span>✓ Настройка системы</span>
+          <span>✓ Техническая поддержка</span>
+        </div>
+      </div>
+
+      <div class="repair-hero-visual" aria-label="Иллюстрация системы видеонаблюдения">
+        <div class="video-orbit orbit-a"></div>
+        <div class="video-orbit orbit-b"></div>
+        <div class="repair-visual-card">
+          <div class="video-camera-icon">◉</div>
+          <span class="repair-visual-label">СИСТЕМА БЕЗОПАСНОСТИ</span>
+          <h3>Ваш объект под контролем</h3>
+          <p>Камеры, запись и удалённый доступ в одной системе.</p>
+          <div class="repair-visual-line"></div>
+          <div class="repair-visual-stats">
+            <div><strong>IP</strong><span>Сетевые камеры</span></div>
+            <div><strong>24/7</strong><span>Режим работы</span></div>
+          </div>
+          <div class="video-live"><span></span> СИСТЕМА НАСТРОЙКИ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="repair-section" id="services">
+    <div class="container">
+      <div class="repair-section-heading">
+        <span class="repair-eyebrow">НАПРАВЛЕНИЯ РАБОТЫ</span>
+        <h2>Комплексные решения <span>для безопасности</span></h2>
+        <p>Подберём конфигурацию с учётом объекта, задач и бюджета.</p>
+      </div>
+
+      <div class="repair-cards">
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">◉</span><span>01</span></div>
+          <h3>Установка камер</h3>
+          <p>Подбор мест размещения и установка камер внутри помещений и снаружи.</p>
+          <a href="#request" data-service="Установка камер">Обсудить услугу <span>↗</span></a>
+        </article>
+
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">⌁</span><span>02</span></div>
+          <h3>Удалённый просмотр</h3>
+          <p>Настройка доступа к камерам через смартфон, планшет или компьютер.</p>
+          <a href="#request" data-service="Удалённый просмотр">Обсудить услугу <span>↗</span></a>
+        </article>
+
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">▣</span><span>03</span></div>
+          <h3>Запись и хранение</h3>
+          <p>Настройка видеорегистратора, архива записей и параметров хранения.</p>
+          <a href="#request" data-service="Запись и хранение видео">Обсудить услугу <span>↗</span></a>
+        </article>
+
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">⌘</span><span>04</span></div>
+          <h3>Сетевое подключение</h3>
+          <p>Подключение IP-камер и настройка необходимой сетевой инфраструктуры.</p>
+          <a href="#request" data-service="Подключение IP-камер">Обсудить услугу <span>↗</span></a>
+        </article>
+
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">⚙</span><span>05</span></div>
+          <h3>Настройка системы</h3>
+          <p>Настройка изображения, уведомлений, доступа пользователей и записи.</p>
+          <a href="#request" data-service="Настройка видеонаблюдения">Обсудить услугу <span>↗</span></a>
+        </article>
+
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">↻</span><span>06</span></div>
+          <h3>Обслуживание</h3>
+          <p>Диагностика неисправностей, проверка подключения и восстановление работы.</p>
+          <a href="#request" data-service="Обслуживание видеонаблюдения">Обсудить услугу <span>↗</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="repair-section repair-section-alt">
+    <div class="container repair-info-grid">
+      <div class="repair-info-intro">
+        <span class="repair-eyebrow">ПОНЯТНЫЙ ПРОЦЕСС</span>
+        <h2>От задачи до готовой <span>системы</span></h2>
+        <p>Согласуем требования, оборудование и стоимость до начала работ.</p>
+        <a href="#request" class="btn btn-primary">Обсудить задачу <span>↗</span></a>
+      </div>
+
+      <div class="repair-steps">
+        <div class="repair-step"><span>01</span><div><h3>Обсуждаем задачу</h3><p>Уточняем объект, количество зон и ваши требования.</p></div></div>
+        <div class="repair-step"><span>02</span><div><h3>Подбираем оборудование</h3><p>Предлагаем камеры и способ хранения записей.</p></div></div>
+        <div class="repair-step"><span>03</span><div><h3>Согласовываем работы</h3><p>Обсуждаем состав решения, сроки и стоимость.</p></div></div>
+        <div class="repair-step"><span>04</span><div><h3>Настраиваем систему</h3><p>Проверяем работу оборудования и основные функции.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="repair-section">
+    <div class="container">
+      <div class="repair-section-heading">
+        <span class="repair-eyebrow">РЕШЕНИЯ ДЛЯ РАЗНЫХ ОБЪЕКТОВ</span>
+        <h2>Безопасность там, <span>где она важна</span></h2>
+      </div>
+
+      <div class="repair-cards video-object-cards">
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">⌂</span><span>ДЛЯ ДОМА</span></div>
+          <h3>Дом и квартира</h3>
+          <p>Контроль входа, двора, парковки и других важных зон.</p>
+        </article>
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">▤</span><span>ДЛЯ БИЗНЕСА</span></div>
+          <h3>Офис и магазин</h3>
+          <p>Наблюдение за помещениями, входами и рабочими зонами.</p>
+        </article>
+        <article class="repair-card">
+          <div class="repair-card-top"><span class="repair-card-icon">▦</span><span>ДЛЯ ПРЕДПРИЯТИЙ</span></div>
+          <h3>Склад и производство</h3>
+          <p>Контроль периметра, въездов и зон хранения оборудования.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="repair-section repair-section-alt video-faq-section">
+    <div class="container">
+      <div class="repair-section-heading">
+        <span class="repair-eyebrow">ЧАСТЫЕ ВОПРОСЫ</span>
+        <h2>Что важно знать <span>перед установкой</span></h2>
+      </div>
+
+      <div class="video-faq">
+        <details class="faq-item">
+          <summary>Можно ли смотреть камеры со смартфона?</summary>
+          <p>Да, если выбранное оборудование поддерживает удалённый доступ и правильно настроено подключение. Возможности зависят от модели камер и сети на объекте.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Сколько камер потребуется?</summary>
+          <p>Количество зависит от размеров объекта, расположения входов и зон, которые нужно контролировать. Сначала определяются задачи, затем подбирается конфигурация.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Как долго хранятся видеозаписи?</summary>
+          <p>Срок зависит от объёма накопителя, числа камер, качества записи и выбранных настроек. Эти параметры можно согласовать при подборе системы.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Можно ли подключить уже установленные камеры?</summary>
+          <p>В некоторых случаях да. Это зависит от состояния оборудования, его совместимости и способа подключения. Для оценки потребуется уточнить модели и конфигурацию системы.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="repair-section" id="request">
+    <div class="container repair-contact-grid">
+      <div class="repair-contact-copy">
+        <span class="repair-eyebrow">ОБСУДИМ ВАШ ПРОЕКТ</span>
+        <h2>Подберём решение <span>под ваши задачи</span></h2>
+        <p>Расскажите об объекте и пожеланиях — подготовим обращение для обсуждения подходящего решения.</p>
+        <p class="repair-contact-note">Стоимость зависит от оборудования, количества камер, сложности монтажа и настройки.</p>
+
+        <a class="video-email" href="mailto:anargusejnov30@gmail.com">
+          <span>ЭЛЕКТРОННАЯ ПОЧТА</span>
+          <strong>anargusejnov30@gmail.com</strong>
+          <span class="video-email-arrow">↗</span>
+        </a>
+      </div>
+
+      <form class="repair-form" id="lead-form">
+        <h3>Заявка на видеонаблюдение</h3>
+        <p class="form-subtitle">Заполните поля — подготовим письмо с вашей заявкой.</p>
+
+        <label for="lead-name">Ваше имя</label>
+        <input id="lead-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+
+        <label for="lead-phone">Телефон или @username</label>
+        <input id="lead-phone" name="phone" type="text" autocomplete="tel" placeholder="+7 (999) 123-45-67 или @username" required>
+
+        <label for="lead-email">Электронная почта</label>
+        <input id="lead-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" maxlength="254" required>
+
+        <label for="lead-service">Что вас интересует?</label>
+        <select id="lead-service" name="service" required>
+          <option value="Подбор решения по видеонаблюдению">Подобрать систему видеонаблюдения</option>
+          <option value="Установка камер">Установка камер</option>
+          <option value="Удалённый просмотр">Удалённый просмотр</option>
+          <option value="Запись и хранение видео">Запись и хранение видео</option>
+          <option value="Подключение IP-камер">Подключение IP-камер</option>
+          <option value="Настройка видеонаблюдения">Настройка системы</option>
+          <option value="Обслуживание видеонаблюдения">Обслуживание</option>
+        </select>
+
+        <label for="lead-message">Описание задачи</label>
+        <textarea id="lead-message" name="message" rows="4" placeholder="Например: нужно установить камеры в офисе"></textarea>
+
+        <label class="privacy-check">
+          <input type="checkbox" name="privacy" required>
+          <span>Я согласен(на) на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" style="color: var(--blue-light); text-decoration: underline;">Политикой конфиденциальности</a>.</span>
+        </label>
+
+        <button class="btn btn-primary form-submit" type="submit">Подготовить заявку <span>↗</span></button>
+        <p class="repair-form-note">Напишите, что случилось. Мы ответим и уточним детали.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" style="flex-wrap: wrap; padding-bottom: 20px;">
+  <a class="brand footer-brand" href="index.html" aria-label="Медиа Макс — наверх">
+    <img src="./image/logo.jpg" alt="Медиа Макс" class="brand-logo">
+    <div class="brand-text">
+      <span class="brand-name">Медиа <span>Макс</span></span>
+      <span class="brand-tagline">IT и технические решения</span>
+    </div>
+  </a>
+  
+  <div style="width: 100%; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 11px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+    <div>
+      <p style="margin: 0 0 5px;">ООО «Медиа Макс»</p>
+      <p style="margin: 0;">675011, Амурская область, г. Благовещенск, ул. Горького, д. 183, кв. 3</p>
+      <p style="margin: 0;">ИНН 2801216693, КПП 280101001, ОГРН 1162801051027</p>
+    </div>
+    <div style="text-align: right;">
+      <p style="margin: 0 0 5px;">© <span id="current-year"></span> Все права защищены.</p>
+      <a href="mailto:anargusejnov30@gmail.com" style="color: var(--blue-light); text-decoration: none;">anargusejnov30@gmail.com</a>
+    </div>
+  </div>
+  
+  <a href="#home" class="back-top" style="margin-top: 20px; width: 100%; text-align: center;">Наверх ↑</a>
+</footer>
+</body>
+</html>

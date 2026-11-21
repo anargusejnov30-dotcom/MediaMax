@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080A10">
+  <meta name="description" content="Диагностика и ремонт стиральных машин, холодильников, пылесосов и другой бытовой техники — Медиа Макс, Благовещенск.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Ремонт бытовой техники — Медиа Макс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem("mediaMax_theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+  <script src="script.js" defer></script>
+</head>
+<body id="home">
+  <div class="ambient ambient-blue"></div>
+  <div class="ambient ambient-violet"></div>
+
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Медиа Макс — главная">
+      <img src="./image/logo.jpg" alt="Медиа Макс" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-name">Медиа <span>Макс</span></span>
+        <span class="brand-tagline">IT и технические решения</span>
+      </div>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navigation" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="computer-repair.html">Ремонт компьютеров</a>
+      <a href="video-surveillance.html">Видеонаблюдение</a>
+      <a href="it-services.html">Сети и IT</a>
+      <a href="#repair-services">Услуги</a>
+      <a href="#contacts" class="nav-contact">Контакты <span>↗</span></a>
+    </nav>
+    <div class="header-right"></div>
+  </header>
+
+  <main>
+    <section class="section-wrap repair-hero">
+      <div class="repair-breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <a href="index.html#services">Услуги</a>
+        <span>/</span>
+        <span>Ремонт бытовой техники</span>
+      </div>
+      <div class="repair-hero-grid">
+        <div class="repair-hero-copy">
+          <span class="section-kicker">СТИРАЛЬНЫЕ МАШИНЫ · ХОЛОДИЛЬНИКИ · ПЫЛЕСОСЫ</span>
+          <h1>Бытовая техника снова должна <span class="gradient-text">работать.</span></h1>
+          <p>Разбираемся с поломкой, называем возможный ремонт и приступаем только после согласования стоимости и срока.</p>
+          <div class="hero-buttons">
+            <a href="#contacts" class="button button-primary">Описать поломку <span>↗</span></a>
+            <a href="#repair-services" class="button button-ghost">Какую технику берем <span>↓</span></a>
+          </div>
+          <div class="repair-note">
+            <span class="repair-note-icon">i</span>
+            <span>Возможность ремонта, срок и стоимость определяются после описания задачи и осмотра техники.</span>
+          </div>
+        </div>
+        <div class="repair-visual">
+          <div class="repair-visual-glow"></div>
+          <div class="visual-tag visual-tag-top"><span>⚙</span><div><b>Бытовая техника</b><small>Диагностика и ремонт</small></div></div>
+          <div class="visual-tag visual-tag-bottom"><span>✓</span><div><b>Сначала согласование</b><small>Потом работы</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap repair-section" id="repair-services">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">ЧЕМ МОЖЕМ ПОМОЧЬ</span>
+          <h2>Техника, с которой <span class="gradient-text">работаем</span></h2>
+        </div>
+        <p>Опишите модель и что именно перестало работать.</p>
+      </div>
+      <div class="repair-service-grid">
+        <article class="repair-service-card">
+          <div class="repair-service-icon">▣</div>
+          <span class="repair-card-number">01</span>
+          <h3>Стиральные машины</h3>
+          <p>Не сливает, не отжимает, не набирает воду или останавливается с ошибкой.</p>
+          <a href="#contacts" class="text-link" data-service="Ремонт бытовой техники" data-problem="Стиральная машина">Описать неисправность <span>↗</span></a>
+        </article>
+        <article class="repair-service-card">
+          <div class="repair-service-icon">▱</div>
+          <span class="repair-card-number">02</span>
+          <h3>Холодильники</h3>
+          <p>Не холодит, шумит, течет или не держит температуру.</p>
+          <a href="#contacts" class="text-link" data-service="Ремонт бытовой техники" data-problem="Холодильник">Описать неисправность <span>↗</span></a>
+        </article>
+        <article class="repair-service-card">
+          <div class="repair-service-icon">⌘</div>
+          <span class="repair-card-number">03</span>
+          <h3>Пылесосы</h3>
+          <p>Слабая тяга, не включается, перегревается или не держит заряд.</p>
+          <a href="#contacts" class="text-link" data-service="Ремонт бытовой техники" data-problem="Пылесос">Описать неисправность <span>↗</span></a>
+        </article>
+        <article class="repair-service-card">
+          <div class="repair-service-icon">⚙</div>
+          <span class="repair-card-number">04</span>
+          <h3>Другая техника</h3>
+          <p>Если прибора нет в списке, опишите его. Скажем, беремся ли за такой ремонт.</p>
+          <a href="#contacts" class="text-link" data-service="Ремонт бытовой техники" data-problem="Другая бытовая техника">Описать неисправность <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="repair-section repair-problems">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">С ЧЕГО НАЧАТЬ</span>
+            <h2>Что указать <span class="gradient-text">в заявке</span></h2>
+          </div>
+        </div>
+        <div class="problem-list">
+          <a href="#contacts" class="problem-item" data-problem="Техника не включается">
+            <span class="problem-index">01</span><span class="problem-text"><b>Не включается</b><small>Нет реакции на кнопку или вилку</small></span><span class="problem-arrow">↗</span>
+          </a>
+          <a href="#contacts" class="problem-item" data-problem="Техника работает, но не выполняет основную функцию">
+            <span class="problem-index">02</span><span class="problem-text"><b>Включается, но не работает как нужно</b><small>Не холодит, не сливает, слабо тянет</small></span><span class="problem-arrow">↗</span>
+          </a>
+          <a href="#contacts" class="problem-item" data-problem="Техника шумит, течет или показывает ошибку">
+            <span class="problem-index">03</span><span class="problem-text"><b>Шум, течь или ошибка</b><small>Напишите код с экрана, если он есть</small></span><span class="problem-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap repair-contact" id="contacts">
+      <div class="repair-contact-copy">
+        <span class="section-kicker">СЛЕДУЮЩИЙ ШАГ</span>
+        <h2>Расскажите, что случилось с <span class="gradient-text">техникой.</span></h2>
+        <p>Укажите тип прибора, марку и что перестало работать.</p>
+        <a href="index.html#services" class="back-to-main">Другие услуги Медиа Макс <span>↗</span></a>
+      </div>
+      <form class="lead-form" id="lead-form">
+        <h3>Заявка на ремонт техники</h3>
+        <p class="form-subtitle">Поля со звездочкой обязательны.</p>
+        <label for="client-name">Ваше имя *</label>
+        <input id="client-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required>
+        <label for="client-phone">Телефон или @username *</label>
+        <input id="client-phone" name="phone" type="text" placeholder="+7 (999) 123-45-67 или @username" autocomplete="tel" required>
+        <label for="client-email">Электронная почта *</label>
+        <input id="client-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" maxlength="254" required>
+        <label for="client-service">Услуга</label>
+        <select id="client-service" name="service" required>
+          <option value="Ремонт бытовой техники" selected>Ремонт бытовой техники</option>
+          <option>Ремонт компьютеров</option>
+          <option>Видеонаблюдение</option>
+          <option>Сети и IT</option>
+          <option>Другая задача</option>
+        </select>
+        <label for="device-type">Тип техники</label>
+        <select id="device-type" name="device">
+          <option value="">Выберите прибор</option>
+          <option>Стиральная машина</option>
+          <option>Холодильник</option>
+          <option>Пылесос</option>
+          <option>Другая техника</option>
+        </select>
+        <label for="client-message">Что произошло? *</label>
+        <textarea id="client-message" name="message" rows="4" placeholder="Марка, модель и как проявляется поломка" required></textarea>
+        <label class="privacy-check">
+          <input type="checkbox" name="consent" required>
+          <span>Я согласен(на) на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" style="color: var(--blue-light); text-decoration: underline;">Политикой конфиденциальности</a>.</span>
+        </label>
+        <button class="button button-primary form-submit" type="submit">Подготовить заявку <span>↗</span></button>
+        <p class="form-note">Напишите, что случилось. Мы ответим и уточним детали.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" style="flex-wrap: wrap; padding-bottom: 20px;">
+    <a class="brand footer-brand" href="index.html" aria-label="Медиа Макс — наверх">
+      <img src="./image/logo.jpg" alt="Медиа Макс" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-name">Медиа <span>Макс</span></span>
+        <span class="brand-tagline">IT и технические решения</span>
+      </div>
+    </a>
+    <div style="width: 100%; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 11px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+      <div>
+        <p style="margin: 0 0 5px;">ООО «Медиа Макс»</p>
+        <p style="margin: 0;">675011, Амурская область, г. Благовещенск, ул. Горького, д. 183, кв. 3</p>
+        <p style="margin: 0;">ИНН 2801216693, КПП 280101001, ОГРН 1162801051027</p>
+      </div>
+      <div style="text-align: right;">
+        <p style="margin: 0 0 5px;">© <span id="current-year"></span> Все права защищены.</p>
+        <a href="mailto:anargusejnov30@gmail.com" style="color: var(--blue-light); text-decoration: none;">anargusejnov30@gmail.com</a>
+      </div>
+    </div>
+    <a href="#home" class="back-top" style="margin-top: 20px; width: 100%; text-align: center;">Наверх ↑</a>
+  </footer>
+</body>
+</html>

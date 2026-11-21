@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Личный кабинет клиента ООО «Медиа Макс»: регистрация и вход.">
+  
+  <!-- ИКОНКА САЙТА -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Личный кабинет — Медиа Макс</title>
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem("mediaMax_theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+  <script src="script.js" defer></script>
+  <script src="account.js" defer></script>
+</head>
+
+<body class="account-page">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Медиа Макс — главная">
+        <img src="image/logo.jpg" alt="Логотип Медиа Макс">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="account-navigation">
+        ☰
+      </button>
+      <nav class="nav" id="account-navigation">
+        <a href="index.html">Главная</a>
+        <a href="computer-repair.html">Ремонт компьютеров</a>
+        <a href="video-surveillance.html">Видеонаблюдение</a>
+        <a href="it-services.html">IT-услуги</a>
+        <a href="appliance-repair.html">Бытовая техника</a>
+        <a href="account.html" aria-current="page">Личный кабинет</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="account-main">
+    <div class="account-layout">
+      <section class="account-intro">
+        <span class="account-eyebrow">ООО «Медиа Макс»</span>
+        <h1>Ваш личный кабинет</h1>
+        <p>Здесь хранятся ваши обращения с этого браузера. Создайте аккаунт или войдите, если уже зарегистрированы.</p>
+
+        <div class="account-benefits">
+          <div class="account-benefit">
+            <span class="account-benefit-icon">01</span>
+            <div>
+              <h2>Список обращений</h2>
+              <p>Заявка с сайта сохраняется в кабинете, если указана та же почта.</p>
+            </div>
+          </div>
+          <div class="account-benefit">
+            <span class="account-benefit-icon">02</span>
+            <div>
+              <h2>Имя и телефон</h2>
+              <p>Контакты можно поправить. Почта остается той, с которой вы вошли.</p>
+            </div>
+          </div>
+          <div class="account-benefit">
+            <span class="account-benefit-icon">03</span>
+            <div>
+              <h2>Только этот браузер</h2>
+              <p>Кабинет хранит запись на этом компьютере и не отправляет ее в учетную программу.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="account-panel" aria-label="Вход и регистрация">
+        <div class="account-tabs" role="tablist" aria-label="Выбор формы">
+          <button class="account-tab is-active" type="button" id="register-tab" role="tab" aria-selected="true" aria-controls="register-panel" data-auth-tab="register">Регистрация</button>
+          <button class="account-tab" type="button" id="login-tab" role="tab" aria-selected="false" aria-controls="login-panel" data-auth-tab="login">Войти</button>
+        </div>
+
+        <div class="account-form-panel" id="register-panel" role="tabpanel" aria-labelledby="register-tab" data-auth-panel="register">
+          <div class="account-form-heading">
+            <h2>Создать аккаунт</h2>
+            <p>Заполните поля ниже, чтобы зарегистрироваться.</p>
+          </div>
+
+          <form class="auth-form" id="register-form">
+            <label for="register-name">Ваше имя</label>
+            <input id="register-name" name="name" type="text" placeholder="Например, Алексей" autocomplete="name" minlength="2" maxlength="80" required>
+
+            <label for="register-email">Электронная почта</label>
+            <input id="register-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" inputmode="email" maxlength="254" required>
+
+            <label for="register-country">Страна и код телефона</label>
+            <select id="register-country" name="country">
+              <option value="RU">Россия (+7)</option>
+              <option value="LV">Латвия (+371)</option>
+              <option value="US">США / Канада (+1)</option>
+            </select>
+
+            <label for="register-phone">Номер телефона</label>
+            <input id="register-phone" name="phone" type="tel" placeholder="+7 (999) 123-45-67" autocomplete="tel" inputmode="tel" aria-describedby="phone-help" required>
+            <p class="account-field-help" id="phone-help">Номер форматируется по выбранной стране.</p>
+
+            <label for="register-password">Пароль</label>
+            <div class="password-wrapper">
+              <input id="register-password" name="password" type="password" placeholder="Не менее 6 символов" autocomplete="new-password" minlength="6" maxlength="128" required>
+              <button type="button" class="toggle-password" aria-label="Показать пароль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+
+            <label for="register-password-confirm">Повторите пароль</label>
+            <div class="password-wrapper">
+              <input id="register-password-confirm" name="passwordConfirm" type="password" placeholder="Введите пароль еще раз" autocomplete="new-password" minlength="6" maxlength="128" required>
+              <button type="button" class="toggle-password" aria-label="Показать пароль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+
+            <label class="account-consent">
+              <input type="checkbox" name="consent" required>
+              <span>Я даю согласие ООО «Медиа Макс» на обработку моих персональных данных для регистрации.</span>
+            </label>
+
+            <button class="account-submit" type="submit">Создать аккаунт</button>
+            <p class="account-status" id="register-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="account-switch-text">
+            Уже зарегистрированы?
+            <button type="button" class="account-text-button" data-show-login>Войти</button>
+          </p>
+        </div>
+
+        <div class="account-form-panel" id="login-panel" role="tabpanel" aria-labelledby="login-tab" data-auth-panel="login" hidden>
+          <div class="account-form-heading">
+            <h2>С возвращением!</h2>
+            <p>Введите данные своего аккаунта.</p>
+          </div>
+
+          <form class="auth-form" id="login-form">
+            <label for="login-email">Электронная почта</label>
+            <input id="login-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" inputmode="email" maxlength="254" required>
+
+            <label for="login-password">Пароль</label>
+            <div class="password-wrapper">
+              <input id="login-password" name="password" type="password" placeholder="Ваш пароль" autocomplete="current-password" maxlength="128" required>
+              <button type="button" class="toggle-password" aria-label="Показать пароль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+
+            <button class="account-submit" type="submit">Войти в аккаунт</button>
+            <p class="account-status" id="login-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="account-switch-text">
+            Ещё нет аккаунта?
+            <button type="button" class="account-text-button" data-show-register>Зарегистрироваться</button>
+          </p>
+        </div>
+
+        <div class="account-form-panel" id="cabinet-panel" data-auth-panel="cabinet" hidden>
+          <div class="account-form-heading">
+            <h2>Личный кабинет</h2>
+            <p id="cabinet-greeting"></p>
+          </div>
+
+          <form class="auth-form" id="profile-form">
+            <label for="cabinet-name">Ваше имя</label>
+            <input id="cabinet-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+
+            <label for="cabinet-phone">Номер телефона</label>
+            <input id="cabinet-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67">
+
+            <button class="account-submit" type="submit">Сохранить данные</button>
+            <p class="account-status" id="profile-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <h3 class="cabinet-heading">Ваши обращения</h3>
+          <div class="cabinet-requests" id="cabinet-requests"></div>
+          <button class="account-submit account-logout" id="cabinet-logout" type="button">Выйти из аккаунта</button>
+        </div>
+
+        <p class="account-security-note">
+          Пароль и обращения хранятся только в этом браузере. В базу предприятия они не передаются.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="account-year"></span> ООО «Медиа Макс»<br>675011, Амурская область, г. Благовещенск, ул. Горького, д. 183, кв. 3<br>ИНН 2801216693, КПП 280101001, ОГРН 1162801051027</p>
+      <a href="index.html#contacts">Связаться с нами</a>
+    </div>
+  </footer>
+</body>
+</html>

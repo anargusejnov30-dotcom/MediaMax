@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080A10">
+  <meta name="description" content="Медиа Макс — ремонт компьютеров и бытовой техники, видеонаблюдение, компьютерные сети и IT-обслуживание для дома и бизнеса.">
+  
+  <!-- ИКОНКА САЙТА -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Медиа Макс — IT и технические решения</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem("mediaMax_theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+  <script src="script.js" defer></script>
+</head>
+<body id="home">
+  <div class="ambient ambient-blue"></div>
+  <div class="ambient ambient-violet"></div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Медиа Макс — главная">
+      <img src="./image/logo.jpg" alt="Медиа Макс" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-name">Медиа <span>Макс</span></span>
+        <span class="brand-tagline">IT и технические решения</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#about">О компании</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#process">Как работаем</a>
+      <a href="#contacts" class="nav-contact">Обсудить задачу <span>↗</span></a>
+    </nav>
+
+    <div class="header-right"></div>
+  </header>
+
+  <main>
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> ТЕХНИЧЕСКИЕ РЕШЕНИЯ ДЛЯ ДОМА И БИЗНЕСА</div>
+        <h1>Технологии должны <span class="gradient-text">работать.</span></h1>
+        <p class="hero-lead">
+          От ремонта компьютера до настройки видеонаблюдения и сетевой инфраструктуры.
+          Помогаем решать технические задачи без лишней сложности.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#contacts">Оставить заявку <span>↗</span></a>
+          <a class="button button-ghost" href="#services">Изучить услуги <span>↓</span></a>
+        </div>
+
+        <div class="hero-caption">
+          <span class="caption-line"></span>
+          <span>ООО «Медиа Макс» · IT и техническое обслуживание</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Технологичный графический элемент">
+        <div class="art-chip chip-top"><span class="chip-symbol">⌘</span><div><b>IT & TECH</b><small>Практичные решения</small></div></div>
+        <div class="art-chip chip-bottom"><span class="chip-check">✓</span><div><b>От задачи к результату</b><small>С понятными этапами работы</small></div></div>
+        <span class="art-plus plus-one">+</span>
+        <span class="art-plus plus-two">+</span>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="section-wrap section-block" id="services">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">НАШИ НАПРАВЛЕНИЯ</span>
+          <h2>Техническая помощь <span class="gradient-text">в одном месте</span></h2>
+        </div>
+        <p>Четыре направления работы — выбирайте то, что нужно именно вам.</p>
+      </div>
+
+      <div class="service-grid">
+        <a href="computer-repair.html" class="service-card">
+          <div class="service-bg" style="background-image: url('./image/services/repair.jpg');"></div>
+          <div class="service-meta"><span class="service-icon">⌘</span><span>01 / 04</span></div>
+          <h3>Ремонт компьютеров</h3>
+          <p>Диагностика, поиск неисправностей, настройка и восстановление работоспособности компьютеров и ноутбуков.</p>
+          <ul>
+            <li>Диагностика неисправностей</li>
+            <li>Установка и настройка ПО</li>
+            <li>Устранение проблем с системой</li>
+            <li>Обслуживание компьютеров</li>
+          </ul>
+          <span class="text-link">Перейти к услуге <span>↗</span></span>
+        </a>
+
+        <a href="video-surveillance.html" class="service-card">
+          <div class="service-bg" style="background-image: url('./image/services/cctv.jpg');"></div>
+          <div class="service-meta"><span class="service-icon">◉</span><span>02 / 04</span></div>
+          <h3>Видеонаблюдение</h3>
+          <p>Подбор и настройка решений для контроля территории, помещений, офиса или коммерческого объекта.</p>
+          <ul>
+            <li>Подбор оборудования</li>
+            <li>Установка и настройка камер</li>
+            <li>Настройка записи и хранения</li>
+            <li>Удалённый просмотр</li>
+          </ul>
+          <span class="text-link">Перейти к услуге <span>↗</span></span>
+        </a>
+
+        <a href="it-services.html" class="service-card">
+          <div class="service-bg" style="background-image: url('./image/services/network.jpg');"></div>
+          <div class="service-meta"><span class="service-icon">⌁</span><span>03 / 04</span></div>
+          <h3>Сети и IT</h3>
+          <p>Подключение устройств, настройка локальных сетей и Wi-Fi, помощь с сетевым оборудованием и IT-средой.</p>
+          <ul>
+            <li>Настройка Wi-Fi и роутеров</li>
+            <li>Подключение сетевых устройств</li>
+            <li>Настройка локальной сети</li>
+            <li>Техническая поддержка</li>
+          </ul>
+          <span class="text-link">Перейти к услуге <span>↗</span></span>
+        </a>
+
+        <a href="appliance-repair.html" class="service-card">
+          <div class="service-bg" style="background-image: url('./image/services/equipment.jpg');"></div>
+          <div class="service-meta"><span class="service-icon">⚙</span><span>04 / 04</span></div>
+          <h3>Ремонт бытовой техники</h3>
+          <p>Диагностика и восстановление работоспособности стиральных машин, холодильников, пылесосов и другой техники.</p>
+          <ul>
+            <li>Выявление причин поломки</li>
+            <li>Замена изношенных деталей</li>
+            <li>Настройка и проверка работы</li>
+            <li>Консультация по эксплуатации</li>
+          </ul>
+          <span class="text-link">Перейти к услуге <span>↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section-wrap section-block advantages-section" id="advantages">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">ПОЧЕМУ МЕДИА МАКС</span>
+          <h2>Технические вопросы — <span class="gradient-text">понятно и по делу</span></h2>
+        </div>
+      </div>
+
+      <div class="advantages-grid">
+        <article class="advantage">
+          <span class="advantage-number">01</span>
+          <h3>Начинаем с задачи</h3>
+          <p>Сначала разбираемся, что требуется и какой результат нужен, затем предлагаем следующий шаг.</p>
+        </article>
+        <article class="advantage">
+          <span class="advantage-number">02</span>
+          <h3>Понятные договорённости</h3>
+          <p>Обсуждаем объём работ, условия и стоимость до начала выполнения согласованной задачи.</p>
+        </article>
+        <article class="advantage">
+          <span class="advantage-number">03</span>
+          <h3>Разные технические задачи</h3>
+          <p>Компьютеры, сети, видеонаблюдение и оборудование — можно обсудить в одном месте.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- О КОМПАНИИ -->
+    <section class="section-wrap section-block about-section" id="about">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">О КОМПАНИИ</span>
+          <h2>Мы — <span class="gradient-text">Медиа Макс</span></h2>
+        </div>
+        <p>Технические решения, которые работают на вас.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-glass-card">
+            <div class="about-stat">
+              <strong>2016</strong>
+              <span>Год основания компании</span>
+            </div>
+            <div class="about-stat">
+              <strong>4</strong>
+              <span>Направления работ</span>
+            </div>
+            <div class="about-stat">
+              <strong class="about-stat-text">Благовещенск</strong>
+              <span>Работаем в этом городе</span>
+            </div>
+            <div class="about-glow"></div>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <h3>Технологии без лишней сложности</h3>
+          <p>
+            ООО «Медиа Макс» — это команда инженеров и специалистов, которая помогает частным клиентам и бизнесу решать технические задачи. Мы не просто «чиним компьютеры», мы выстраиваем инфраструктуру, которая работает стабильно.
+          </p>
+          <p>
+            Наш подход прост: сначала мы слушаем и разбираемся в задаче, затем предлагаем понятное решение с прозрачной стоимостью и сроками. Никаких навязанных услуг и скрытых платежей.
+          </p>
+          
+          <ul class="about-list">
+            <li><span>✓</span> Работаем с домашними и офисными системами</li>
+            <li><span>✓</span> Используем проверенное оборудование</li>
+            <li><span>✓</span> Стоимость и срок согласуем до начала работ</li>
+          </ul>
+
+          <a href="#contacts" class="button button-primary">Обсудить задачу <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИМЕРЫ ЗАДАЧ -->
+    <section class="section-wrap section-block reviews-section" id="reviews">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">ОТЗЫВЫ</span>
+          <h2>Что говорят <span class="gradient-text">клиенты</span></h2>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">А</div>
+            <div class="review-author">
+              <strong>Анна</strong>
+              <span>Офис, Благовещенск</span>
+            </div>
+            <div class="review-stars" aria-label="5 из 5">★★★★★</div>
+          </div>
+          <p class="review-text">
+            Нужна была сеть в новом офисе и камеры на вход. Всё развели аккуратно и показали, как смотреть запись.
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">С</div>
+            <div class="review-author">
+              <strong>Сергей</strong>
+              <span>Ноутбук</span>
+            </div>
+            <div class="review-stars" aria-label="5 из 5">★★★★★</div>
+          </div>
+          <p class="review-text">
+            Ноутбук не включался. Посмотрели питание, заменили разъем, теперь включается сразу.
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">И</div>
+            <div class="review-author">
+              <strong>Ирина</strong>
+              <span>Магазин</span>
+            </div>
+            <div class="review-stars" aria-label="5 из 5">★★★★★</div>
+          </div>
+          <p class="review-text">
+            В магазине пропадал Wi-Fi, касса отваливалась посреди дня. Настроили сеть, связь больше не рвется.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ЭТАПЫ РАБОТЫ -->
+    <section class="section-wrap section-block process-section" id="process">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">КАК МЫ РАБОТАЕМ</span>
+          <h2>Четыре шага к <span class="gradient-text">решению</span></h2>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step"><span>01</span><h3>Заявка</h3><p>Вы описываете проблему или задачу.</p></article>
+        <article class="process-step"><span>02</span><h3>Уточнение</h3><p>Мы уточняем детали и необходимый результат.</p></article>
+        <article class="process-step"><span>03</span><h3>Согласование</h3><p>Обсуждаем варианты, стоимость и сроки.</p></article>
+        <article class="process-step"><span>04</span><h3>Выполнение</h3><p>Приступаем к согласованным работам.</p></article>
+      </div>
+    </section>
+
+    <!-- ЗАЯВКА И КОНТАКТЫ -->
+    <section class="section-wrap contact-section" id="contacts">
+      <div class="contact-intro">
+        <span class="section-kicker">СВЯЖИТЕСЬ С НАМИ</span>
+        <h2>Расскажите о своей <span class="gradient-text">задаче.</span></h2>
+        <p>Опишите, что нужно настроить, отремонтировать или установить. Мы сможем уточнить детали и обсудить дальнейшие действия.</p>
+
+        <div class="contact-methods">
+          <a href="tel:+79145719217" class="contact-method">
+            <span class="method-icon">↗</span>
+            <span><small>ПОЗВОНИТЬ</small><b>+7 914 571-92-17</b></span>
+          </a>
+          <a href="mailto:anargusejnov30@gmail.com" class="contact-method">
+            <span class="method-icon">✉</span>
+            <span><small>НАПИСАТЬ ПИСЬМО</small><b>anargusejnov30@gmail.com</b></span>
+          </a>
+          <a href="https://max.ru/u/+79145719217" target="_blank" rel="noopener noreferrer" class="contact-method">
+            <span class="method-icon">💬</span>
+            <span><small>МЕССЕНДЖЕР</small><b>Написать в MAX</b></span>
+          </a>
+        </div>
+      </div>
+
+      <form class="lead-form" id="lead-form">
+        <h3>Оставить заявку</h3>
+        <p class="form-subtitle">Заполните форму — подготовим обращение по вашей задаче.</p>
+
+        <label for="client-name">Ваше имя *</label>
+        <input id="client-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required>
+
+        <label for="client-phone">Телефон или @username *</label>
+        <input id="client-phone" name="phone" type="text" placeholder="+7 (999) 123-45-67 или @username" autocomplete="tel" required>
+
+        <label for="client-email">Электронная почта *</label>
+        <input id="client-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" maxlength="254" required>
+
+        <label for="client-service">Какая услуга нужна?</label>
+        <select id="client-service" name="service">
+          <option value="">Выберите направление</option>
+          <option>Ремонт компьютеров</option>
+          <option>Видеонаблюдение</option>
+          <option>Сети и IT</option>
+          <option>Ремонт бытовой техники</option>
+          <option>Другая задача</option>
+        </select>
+
+        <label for="client-message">Кратко опишите задачу</label>
+        <textarea id="client-message" name="message" rows="4" placeholder="Что произошло или что нужно сделать?"></textarea>
+
+        <label class="privacy-check">
+          <input type="checkbox" name="consent" required>
+          <span>Я согласен(на) на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" style="color: var(--blue-light); text-decoration: underline;">Политикой конфиденциальности</a>.</span>
+        </label>
+
+        <button class="button button-primary form-submit" type="submit">Подготовить заявку <span>↗</span></button>
+        <p class="form-note">Напишите, что случилось. Мы ответим и уточним детали.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" style="flex-wrap: wrap; padding-bottom: 20px;">
+    <a class="brand footer-brand" href="#home" aria-label="Медиа Макс — наверх">
+      <img src="./image/logo.jpg" alt="Медиа Макс" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-name">Медиа <span>Макс</span></span>
+        <span class="brand-tagline">IT и технические решения</span>
+      </div>
+    </a>
+    
+    <div style="width: 100%; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 11px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+      <div>
+        <p style="margin: 0 0 5px;">ООО «Медиа Макс»</p>
+        <p style="margin: 0;">675011, Амурская область, г. Благовещенск, ул. Горького, д. 183, кв. 3</p>
+        <p style="margin: 0;">ИНН 2801216693, КПП 280101001, ОГРН 1162801051027</p>
+      </div>
+      <div style="text-align: right;">
+        <p style="margin: 0 0 5px;">© <span id="current-year"></span> Все права защищены.</p>
+        <a href="mailto:anargusejnov30@gmail.com" style="color: var(--blue-light); text-decoration: none;">anargusejnov30@gmail.com</a>
+      </div>
+    </div>
+    
+    <a href="#home" class="back-top" style="margin-top: 20px; width: 100%; text-align: center;">Наверх ↑</a>
+  </footer>
+</body>
+</html>
